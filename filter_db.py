@@ -137,4 +137,3 @@ class DBFilter(Filter):
 
 if __name__ == "__main__":
     DBFilter.run()
-    
