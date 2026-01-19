@@ -2,7 +2,7 @@ from openfilter.filter_runtime.filter import Filter
 from openfilter.filter_runtime.filters.video_in import VideoIn
 from openfilter.filter_runtime.filters.webvis import Webvis
 from filter_yolo import YOLOFilter
-from filter_db import DBFilter
+from filter_csv import CSVFilter
 import os
 
 #file://video/example_video.mp4!loop
@@ -21,7 +21,7 @@ if __name__ == "__main__":
             sources='tcp://localhost:5550',
             outputs='tcp://*:5552',
         )),
-        (DBFilter, dict(
+        (CSVFilter, dict(
             sources='tcp://localhost:5552',
             outputs='tcp://*:5554',
         )),

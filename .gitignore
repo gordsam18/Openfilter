@@ -2,3 +2,4 @@ logs
 __pycache__
 video
 .env
+person_counts.csv
