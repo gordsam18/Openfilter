@@ -21,10 +21,10 @@ if __name__ == "__main__":
             sources='tcp://localhost:5550',
             outputs='tcp://*:5552',
         )),
-        (CSVFilter, dict(
-            sources='tcp://localhost:5552',
-            outputs='tcp://*:5554',
-        )),
+        # (CSVFilter, dict(
+        #     sources='tcp://localhost:5552',
+        #     outputs='tcp://*:5554',
+        # )),
         (Webvis, dict(
             sources=['tcp://localhost:5552'],
         )),
