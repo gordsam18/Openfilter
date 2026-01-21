@@ -2,7 +2,7 @@ from openfilter.filter_runtime.filter import Filter
 from openfilter.filter_runtime.filters.video_in import VideoIn
 from openfilter.filter_runtime.filters.webvis import Webvis
 from filter_yolo import YOLOFilter
-from filter_csv import CSVFilter
+#from filter_csv import CSVFilter
 import os
 
 #file://video/example_video.mp4!loop
